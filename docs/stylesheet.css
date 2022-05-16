@@ -150,7 +150,6 @@ font-size: 4rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: white;
 }
 .contact-list{
   display: flex;
