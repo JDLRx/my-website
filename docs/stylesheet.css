@@ -19,6 +19,9 @@ title {
   display: none;
 }
 
+header{
+  font-size: 2rem;
+}
 /* Media query */
 @MEDIA (max-width: 28.75em){
 html{
@@ -69,6 +72,10 @@ h1{
 font-size: 6rem;
 }
 
+h2{
+  font-size: 4rem;
+}
+
 p{
 font-size: 3rem;
   font-style: italic;
@@ -112,6 +119,10 @@ height: 100vh;
   margin: 0 auto;
   margin-bottom: 6rem;
 }
+
+.projects-title{
+  text-align: center;
+}
 /* END PROJECT SECTION */
 
 /* START CONTACT SECTION */
@@ -126,8 +137,30 @@ background-color: #000;
   background-image: linear-gradient(135deg, #3a3d40 0%, #181719 100%);
 }
 
-.contact-section > a {
-font-size: 1.6rem;
+.contact-section > h2 {
+font-size: 4rem;
+
+}
+.contact-button{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.contact-list-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.contact-list{
+  display: flex;
+}
+.contact-icon{
+width: 300px;
+margin-right: 3rem;
+height: auto;
+}
+.contact-icon :hover{
 
 }
 /* END CONTACT SECTION*/
