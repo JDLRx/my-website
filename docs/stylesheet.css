@@ -15,6 +15,18 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 20px;
+}
+
+::-webkit-scrollbar-track{
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #069;
+}
+
 title {
   display: none;
 }
