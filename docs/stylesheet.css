@@ -14,7 +14,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+html,body{
+  width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar{
   width: 20px;
 }
@@ -117,9 +123,9 @@ list-style: none;
 
 .project-sections {
 width: 100%;
-height: 100vh;
+min-height: 100vh;
   background-color: #922;
-  padding-top: 4rem;
+  padding: 4rem;
 }
 
 .projects-tile {
@@ -139,7 +145,7 @@ height: 100vh;
 
 /* START CONTACT SECTION */
 .contact-section {
-max-height: 95vh auto;
+height: 95vh;
 width: 100%;
 background-color: #000;
   background-image: linear-gradient(135deg, #3a3d40 0%, #181719 100%);
@@ -147,9 +153,7 @@ background-color: #000;
 }
 
 .div-contact-wrapper{
-  display: flex;
-    align-content: center;
-    height: 20vh;
+    height: auto;
 }
 
 .contact-section > h2 {
@@ -162,17 +166,30 @@ font-size: 4rem;
 .contact-list-wrapper{
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.contact-icon-wrapper{
-  display: flex;
+
+@media screen and (max-width: 1000px) {
+  .contact-list-wrapper {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    min-width: 44vh;
+  }
+
 }
+
+.contact-icon-wrapper{
+}
+
+
+
 .contact-icon{
 width: 300px;
-margin-right: 3rem;
-height: auto;
+padding: 1.5rem;
 }
+
 .contact-icon :hover{
 }
 
@@ -180,12 +197,12 @@ height: auto;
 .contact-email-wrapper{
   height: 40vh;
   max-width: 100%;
-  padding: 5vh;
+  padding: 3vh;
 }
 
 .contact-email-wrapper-button{
   height: auto;
-  max-width: auto;
+  width: 100%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -215,6 +232,7 @@ textarea {
   height: 150px;
   line-height: 150%;
   resize:vertical;
+  resize:horizontal;
 }
 
 [type="submit"] {
